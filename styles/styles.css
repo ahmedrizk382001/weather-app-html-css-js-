@@ -17,11 +17,11 @@ body {
 /*** Reusable ***/
 
 .fade {
-    transition: opacity 0.5s ease;
+    transition: opacity 0.3s ease;
     opacity: 1;
 }
 
-.fade.hide {
+.hide {
     opacity: 0;
 }
 
@@ -115,8 +115,14 @@ body {
     animation: flip 0.3s ease-in-out;
 }
 
+.card .hide-data {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
 .card .data {
-    transition: 0.3s;
+    opacity: 1;
 }
 
 .card .data .weather-icon {

@@ -10,6 +10,7 @@ async function getWeather(city) {
     } 
     else if(response.ok) {
         let data = await response.json();
+        document.querySelector(".data").classList.remove("hide-data");
         console.log(data);
         updateElement(".city-name", data.name);
         updateElement(".temp", Math.round(data.main.temp) + '°C')
